@@ -4,9 +4,9 @@ function Sobre() {
     return (
         <div>
             <h1>Sobre</h1>
-            <link href="/">
+            <Link href="/">
                 <a>Home</a>
-            </link>
+            </Link>
         </div>
     )
 }
