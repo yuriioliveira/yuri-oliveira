@@ -1,9 +1,13 @@
 import Link from 'next/link';
 import styles from '../styles.module.css'
+import Head from 'next/head'
 
 function Home() {
     return (
         <div>
+            <Head>
+                <title>Yuri Oliveira port</title>
+            </Head>
             <div className={styles.title}>
                 <h1>Home</h1>
             </div>
@@ -28,6 +32,18 @@ function Home() {
         
     )
 }
+
+// log the pageview with their URL
+export const pageview = (url) => {
+    window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS, {
+      page_path: url,
+    })
+  }
+  
+  // log specific events happening.
+  export const event = ({ action, params }) => {
+    window.gtag('event', action, params)
+  }
 
 export default Home;
 
