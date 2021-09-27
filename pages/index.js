@@ -6,7 +6,7 @@ function Home() {
     return (
         <div>
             <Head>
-                <title>Yuri Oliveira port</title>
+                <title>Yuri Oliveira</title>
             </Head>
             <div className={styles.title}>
                 <h1>Home</h1>

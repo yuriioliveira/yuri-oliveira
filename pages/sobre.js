@@ -5,7 +5,7 @@ function Sobre() {
     return (
         <div>
             <Head>
-                <title>Yuri Oliveira port</title>
+                <title>Yuri Oliveira</title>
             </Head>
             <div class="title">
                 <h1>Sobre</h1>

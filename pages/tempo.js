@@ -9,7 +9,7 @@ function Tempo(props) {
     return (
         <div>
             <Head>
-                <title>Yuri Oliveira port</title>
+                <title>Yuri Oliveira</title>
             </Head>
             <div>
                 <div class="title">
