@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head'
 
 function Tempo(props) {
     console.log('> passando pelo Frontend;')
@@ -7,6 +8,9 @@ function Tempo(props) {
 
     return (
         <div>
+            <Head>
+                <title>Yuri Oliveira port</title>
+            </Head>
             <div>
                 <div class="title">
                     <h1>Sobre</h1>
