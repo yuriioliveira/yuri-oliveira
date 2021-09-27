@@ -8,9 +8,9 @@ function Home() {
                 <h1>Home</h1>
             </div>
             <div>
-                <ul>
-                    <li><Link href="/sobre"><a>Sobre nós</a></Link></li>
-                    <li><Link href="/tempo"><a>Tempo</a></Link></li>
+                <ul className={styles.ul}>
+                    <li className={styles.li}><Link href="/sobre"><a>Sobre nós</a></Link></li>
+                    <li className={styles.li}><Link href="/tempo"><a>Tempo</a></Link></li>
                 </ul>
             </div>
             <div>

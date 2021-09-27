@@ -1,3 +1,11 @@
 .title {
-    color:#b40000;
+    color:#B40000;
+}
+
+.li {
+    list-style: none;
+}
+
+.ul {
+    list-style-type: none;
 }
