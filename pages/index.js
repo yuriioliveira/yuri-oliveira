@@ -18,7 +18,7 @@ function Home() {
                 </ul>
             </div>
             <div>
-                <div class="title">
+                <div className={styles.title}>
                     <h2>Parte 2 da página inicial</h2>
                 </div>
                 <div>

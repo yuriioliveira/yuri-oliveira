@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import '@nextcss/reset';
 
 function Header() {
   return (
