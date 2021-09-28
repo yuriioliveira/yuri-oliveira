@@ -1,12 +1,10 @@
 import Link from 'next/link';
-import Head from 'next/head'
+import Header from '../components/header';
 
 function Sobre() {
     return (
         <div>
-            <Head>
-                <title>Yuri Oliveira</title>
-            </Head>
+            <Header />
             <div class="title">
                 <h1>Sobre</h1>
             </div>

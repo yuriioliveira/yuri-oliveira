@@ -1,13 +1,11 @@
 import Link from 'next/link';
-import styles from '../styles.module.css'
-import Head from 'next/head'
+import styles from '../styles.module.css';
+import Header from '../components/header';
 
 function Home() {
     return (
         <div>
-            <Head>
-                <title>Yuri Oliveira</title>
-            </Head>
+            <Header />
             <div className={styles.title}>
                 <h1>Página inicial</h1>
             </div>
