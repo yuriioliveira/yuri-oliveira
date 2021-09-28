@@ -26,6 +26,7 @@ function Home() {
                         <li>LI 1</li>
                         <li>LI 2</li>
                     </ul>
+                    <p>Conteudo sobre Dotstore, Oracle x Salonline, Postman, Linx Commerce, .Liquid, SEO, sliders, JS web, </p>
                 </div>
             </div>
         </div>
