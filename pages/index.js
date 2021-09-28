@@ -1,24 +1,26 @@
 import Link from 'next/link';
 import styles from '../styles.module.css';
 import Header from '../components/header';
+import Topo from '../components/topo';
 
 function Home() {
     return (
         <div>
             <Header />
-            <div className={styles.title}>
-                <h1>Página inicial</h1>
-            </div>
+            <Topo />
             <div>
+                <div className={styles.title}>
+                    <h1>Página inicial</h1>
+                </div>
                 <ul className={styles.ul}>
                     <li className={styles.li}><Link href="/sobre"><a>Sobre nós</a></Link></li>
                     <li className={styles.li}><Link href="/tempo"><a>Tempo</a></Link></li>
                 </ul>
             </div>
             <div>
-            <div class="title">
-                <h2>Parte 2 da página inicial</h2>
-            </div>
+                <div class="title">
+                    <h2>Parte 2 da página inicial</h2>
+                </div>
                 <div>
                     <ul>
                         <li>LI 1</li>

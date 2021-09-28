@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import Header from '../components/header';
+import Topo from '../components/topo';
+import styles from '../styles.module.css';
 
 function Sobre() {
     return (
         <div>
             <Header />
-            <div class="title">
-                <h1>Sobre</h1>
+            <Topo />
+            <div className={styles.title}>
+                    <h1>Sobre nós</h1>
             </div>
             <div>
-                <ul>
-                    <li><Link href="/"><a>Página inicial</a></Link></li>
-                    <li><Link href="/tempo"><a>Tempo</a></Link></li>
-                </ul>
+                <p>Eu sou o Yuri Oliveira</p>
             </div>
         </div>
     )
