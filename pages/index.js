@@ -9,7 +9,7 @@ function Home() {
                 <title>Yuri Oliveira</title>
             </Head>
             <div className={styles.title}>
-                <h1>Home</h1>
+                <h1>Página inicial</h1>
             </div>
             <div>
                 <ul className={styles.ul}>
@@ -19,7 +19,7 @@ function Home() {
             </div>
             <div>
             <div class="title">
-                <h2>Parte 2 da home</h2>
+                <h2>Parte 2 da página inicial</h2>
             </div>
                 <div>
                     <ul>

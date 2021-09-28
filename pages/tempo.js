@@ -17,7 +17,7 @@ function Tempo(props) {
                 </div>
                 <div>
                     <ul>
-                        <li><Link href="/"><a>Home</a></Link></li>
+                        <li><Link href="/"><a>Página inicial</a></Link></li>
                         <li><Link href="/tempo"><a>Tempo</a></Link></li>
                     </ul>
                 </div>
