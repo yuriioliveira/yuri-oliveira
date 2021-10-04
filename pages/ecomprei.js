@@ -1,16 +1,13 @@
-import Header from '../components/header';
-import Topo from '../components/topo';
+import Header from '../components/header'
 import Topbar from '../components/Ecomprei/topo/topbar'
+import LogoSearch from '../components/Ecomprei/topo/logoSearch.js'
 
 function ecomprei(){
     return(
         <div>
             <Header/>
-            <p>Topo normal</p>
-            <Topo/>
-            <p>Topbar</p>
             <Topbar/>
-            <h1>Ecomprei</h1>
+            <LogoSearch/>
         </div>
     )
 }

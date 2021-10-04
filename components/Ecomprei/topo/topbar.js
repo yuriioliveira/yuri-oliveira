@@ -1,21 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../../styles.module.css';
+import LocalShippingIcon from "@material-ui/icons/LocalShipping";
+import Cartaozinho from "@material-ui/icons/CreditCard";
+import Promoicon from "@material-ui/icons/LocalOffer";
 
 function Topbar() {
     return (
         <div>
         <div className={styles.topbar2area}>
             <div className={styles.topbar2entrega}>
-                <Image src="/truck-icon.png" width="25" height="25" />
+                <LocalShippingIcon />
                 <p>Entregamos em <b>TODO O BRASIL</b></p>
             </div>
             <div className={styles.topbar2cartao}>
-            <Image src="/card-icon.png" width="25" height="25" />
+            <Cartaozinho />
                 <p>Toda a Loja em até <b>12X SEM JUROS</b></p>
             </div>
             <div className={styles.topbar2desconto}>
-            <Image src="/desconto-icon.png" width="25" height="25" />
+            <Promoicon />
                 <p><b>5% DE DESCONTO</b> no boleto</p>
             </div>
             <div className={styles.topbar2rastreio}>
