@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
 import '../estilo.css'
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
@@ -18,6 +19,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
+    <CssBaseline />
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
