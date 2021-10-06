@@ -1,14 +1,58 @@
-.arealogo {
-    max-width: 1150px;
+.root {
+    padding: 15px;
+    background: #e3e5e8;
+}
+
+.areaGeral {
+    max-Width: 1150px;
     width: 100%;
     margin: 0 auto;
-    color:#006400;
+    display: flex;
+    flex-Direction: row;
+    flex-Wrap: nowrap;
+    align-Items: center;
 }
 
-#h1title {
-    color:#006400
+.areaBusca {
+    color: #B40000;
+    width: 60%;
 }
 
-.logotipo {
-    width: 200%;
+.campoBusca {
+    width: 80%;
+    margin-Left: 10px;
+    height: 40px;
+    border: 1px solid #000;
+    border-Radius: 12px;
+    padding: 10px 0 10px 30px;
+}
+
+.iconSearch {
+    position: relative;
+    float: left;
+    left: 39px;
+    top: 9px;
+}
+
+.iconCadastro {
+    margin-Right: 10px;
+}
+
+.areaCliente {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-Items: center;
+    justify-content: center;
+    margin-Right: 5%;
+    min-width: 116px;
+}
+.iconCarrinho {
+    display: flex;
+    flex-direction: row;
+    align-Items: center;
+}
+
+.p {
+    margin: 0;
 }
