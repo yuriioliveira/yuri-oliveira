@@ -1,5 +1,6 @@
 export default function handler(req, res) {
     res.status(200).json({
+        "estrelas": "2502",
         "categorias": [
             {
                 "Nome": "Móveis",
