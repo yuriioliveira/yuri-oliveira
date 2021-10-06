@@ -3,7 +3,7 @@ import Image from 'next/image'
 //import estilo from './logoSearch.module.css'
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import LogoEcomprei from '../../../public/logoecomprei.png'
+import LogoEcomprei from '../../../public/logo.png'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
