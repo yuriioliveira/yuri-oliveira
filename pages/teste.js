@@ -12,7 +12,7 @@ function Index({ estrelas }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/categorias')
+  const res = await fetch('https://www.yurioliveira.tec.br/api/categorias')
   const json = await res.json()
 
   return {
