@@ -1,13 +1,10 @@
-import Header from '../components/header'
-import Topbar from '../components/Ecomprei/topo/topbar'
-import LogoSearch from '../components/Ecomprei/topo/logoSearch.js'
+import BarraTopo from '../components/Ecomprei/topo/barratopo'
 
 function ecomprei(){
     return(
         <div>
-            <Header/>
-            <Topbar/>
-            <LogoSearch/>
+            <BarraTopo/>
+            <h1>Abaixo do barratopo</h1>
         </div>
     )
 }

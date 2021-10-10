@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../../../styles.module.css';
+import styles from './topbar.module.css';
 import LocalShippingIcon from "@material-ui/icons/LocalShipping";
 import Cartaozinho from "@material-ui/icons/CreditCard";
 import Promoicon from "@material-ui/icons/LocalOffer";
