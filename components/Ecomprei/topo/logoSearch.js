@@ -5,6 +5,7 @@ import LogoEcomprei from '../../../public/logoEcomprei.png'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Script from 'next/script'
 
 function logoSearch() {
 
@@ -15,7 +16,7 @@ function logoSearch() {
                 <Image src={LogoEcomprei} alt="Logotipo ALT" />
               </div>
               <div className={estilo.areaBusca}>
-                <input type="text"name="busca" placeholder="O que você procura?" className={estilo.campoBusca} />
+                <input id="inputBusca" type="text"name="busca" placeholder="O que você procura?" className={estilo.campoBusca} />
                 <SearchIcon className={estilo.iconSearch} />
                </div>
               <div className={estilo.areaCliente}>
@@ -32,6 +33,15 @@ function logoSearch() {
                 <p>0</p>
               </div>
             </div>
+            <Script id="show-banner" strategy="lazyOnload">
+              {`
+              const conteudoInput = document.querySelector('#inputBusca')
+
+              conteudoInput.addEventListener("input", function() {
+                console.log(conteudoInput.value)});
+
+              `}
+            </Script>
         </div>
     )
 }
