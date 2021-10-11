@@ -13,6 +13,7 @@ function Topo() {
                 <div className={styles.areaMenu}>
                     <ul className={styles.areaMenu.ul}>
                         <li className={styles.areaMenu.li}><a href="/">Página inicial</a></li>
+                        <li className={styles.areaMenu.li}><a href="/paginapets">Pets MongoDb</a></li>
                         <li className={styles.areaMenu.li}><a href="/sobre">Sobre nós</a></li>
                         <li className={styles.areaMenu.li}><a href="/tempo">tempo</a></li>
                         <li className={styles.areaMenu.li}><a href="/ecomprei">Ecomprei</a></li>
