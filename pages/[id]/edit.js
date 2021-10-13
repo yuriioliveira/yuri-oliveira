@@ -25,6 +25,7 @@ const EditPet = () => {
     image_url: pet.image_url,
     likes: pet.likes,
     dislikes: pet.dislikes,
+    nome_produto: pet.nome_produto,
   }
 
   return <Form formId="edit-pet-form" petForm={petForm} forNewPet={false} />

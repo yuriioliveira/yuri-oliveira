@@ -18,6 +18,7 @@ const Form = ({ formId, petForm, forNewPet = true }) => {
     image_url: petForm.image_url,
     likes: petForm.likes,
     dislikes: petForm.dislikes,
+    nome_produto: petForm.nome_produto,
   })
 
   /* The PUT method edits an existing entry in the mongodb database. */
@@ -100,6 +101,7 @@ const Form = ({ formId, petForm, forNewPet = true }) => {
     if (!form.owner_name) err.owner_name = 'Owner is required'
     if (!form.species) err.species = 'Species is required'
     if (!form.image_url) err.image_url = 'Image URL is required'
+    if (!form.nome_produto) err.nome_produto = 'Nome do produto is required'
     return err
   }
 
@@ -183,6 +185,16 @@ const Form = ({ formId, petForm, forNewPet = true }) => {
           maxLength="60"
           value={form.dislikes}
           onChange={handleChange}
+        />
+
+        <label htmlFor="nome_produto">Nome do produto</label>
+        <input
+          type="text"
+          maxLength="20"
+          name="nome_produto"
+          value={form.nome_produto}
+          onChange={handleChange}
+          required
         />
 
         <button type="submit" className="btn">

@@ -54,6 +54,13 @@ const PetSchema = new mongoose.Schema({
 
     type: Array,
   },
+  nome_produto: {
+    /* O nome do produto */
+
+    type: String,
+    required: [true, "Informe o nome do produto"],
+    maxlength: [20, "nome do produto não pode ter mais do que 60 caracteres"],
+  },
 })
 
 export default mongoose.models.Pet || mongoose.model('Pet', PetSchema)
