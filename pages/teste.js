@@ -14,7 +14,7 @@ function testeApi({ estrelas, categorias }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://www.yurioliveira.tec.br/api/categorias')
+  const res = await fetch('https://www.yurioliveira.tec.br/api/categoriasfixa')
   const json = await res.json()
 
   return {
