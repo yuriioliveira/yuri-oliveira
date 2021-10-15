@@ -71,7 +71,7 @@ const Form = ({ formId, catForm, forNewCat = true }) => {
   const handleChange = (e) => {
     const target = e.target
     const value =
-      target.name === 'poddy_trained' ? target.checked : target.value
+      target.name === 'ativo_categorias' ? target.checked : target.value
     const name = target.name
 
     setForm({
