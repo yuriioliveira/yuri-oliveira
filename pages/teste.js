@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function testeApi({ estrelas, categorias }) {
+function testeApi({ estrelas }) {
   return (
     <div>
       <p>Next.js has {estrelas} ⭐️</p>
@@ -8,7 +8,6 @@ function testeApi({ estrelas, categorias }) {
         <a>How about preact?</a>
       </Link>
       <p>Lista das categorias aqui pra baixo Está comentado</p>
-      <p>{categorias}</p>
     </div>
   )
 }
@@ -20,7 +19,6 @@ export async function getStaticProps() {
   return {
     props: {
         estrelas: json.estrelas,
-        //categorias: json.categorias,
     },
   }
 }
