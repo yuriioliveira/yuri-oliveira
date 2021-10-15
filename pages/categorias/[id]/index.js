@@ -35,7 +35,7 @@ const CatPage = ({ cat }) => {
             <p className="owner">Id: {cat.id_categorias}</p>
 
           <div className="btn-container">
-            <Link href="/[id]/edit" as={`/${cat._id}/edit`}>
+            <Link href="/categorias/[id]/edit" as={`/categorias/${cat._id}/edit`}>
               <button className="btn edit">Edit</button>
             </Link>
             <button className="btn delete" onClick={handleDelete}>
