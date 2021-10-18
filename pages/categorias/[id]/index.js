@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import dbConnect from '../../../lib/cat-dbConnect'
-import Pet from '../../../models/Pet'
 import Cat from '../../../models/cadastrar-categorias'
 
 /* Allows you to view pet card info and delete pet card*/

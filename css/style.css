@@ -182,3 +182,23 @@ li {
 .confirmation-box.show {
   display: block;
 }
+
+.divCategorias {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.ulCategorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.liCategorias {
+  margin-right: 25px;
+}
