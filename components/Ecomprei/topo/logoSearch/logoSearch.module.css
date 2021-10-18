@@ -15,11 +15,12 @@
 
 .areaBusca {
     color: #B40000;
-    width: 60%;
+    width: 55%;
+    display: flex;
+    align-items: center;
 }
 
 .campoBusca {
-    width: 80%;
     margin-Left: 10px;
     height: 40px;
     border: 1px solid #000;
@@ -29,9 +30,7 @@
 
 .iconSearch {
     position: relative;
-    float: left;
-    left: 39px;
-    top: 9px;
+    left: 40px;
 }
 
 .iconCadastro {
@@ -44,7 +43,7 @@
     flex-wrap: nowrap;
     align-Items: center;
     justify-content: center;
-    margin-Right: 5%;
+    margin: 0 5%;
     min-width: 116px;
 }
 .iconCarrinho {

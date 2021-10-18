@@ -16,8 +16,8 @@ function logoSearch() {
                 <Image src={LogoEcomprei} alt="Logotipo ALT" />
               </div>
               <div className={estilo.areaBusca}>
-                <input id="inputBusca" type="text"name="busca" placeholder="O que você procura?" className={estilo.campoBusca} />
                 <SearchIcon className={estilo.iconSearch} />
+                <input id="inputBusca" type="text"name="busca" placeholder="O que você procura?" className={estilo.campoBusca} />
                </div>
               <div className={estilo.areaCliente}>
                 <div>
