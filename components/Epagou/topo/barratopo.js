@@ -1,7 +1,6 @@
 import Header from '../topo/header'
 import Topbar from '../topo/topbar/topbar'
 import LogoSearch from '../topo/logoSearch/logoSearch'
-import MenuTopo from '../topo/menu/menu'
 
 function barraTopo(){
     return(
@@ -9,7 +8,6 @@ function barraTopo(){
             <Header/>
             <Topbar/>
             <LogoSearch/>
-            <MenuTopo/>
         </div>
     )
 }
