@@ -1,4 +1,4 @@
-import BarraTopo from '../components/Ecomprei/topo/barratopo'
+import BarraTopo from '../components/Epagou/topo/barratopo'
 
 function ecomprei(){
     return(

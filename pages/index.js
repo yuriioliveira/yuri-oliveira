@@ -26,8 +26,6 @@ function Home() {
                         <li>LI 1</li>
                         <li>LI 2</li>
                     </ul>
-                    <p>Conteudo sobre Dotstore, Oracle x Salonline, Postman, Linx Commerce, .Liquid, SEO, sliders, JS web, </p>
-                    <p>Para o menu de e-comprei, ler as categorias de JSON e preencher com alguns produtos por JSON, assim a criação de categoria fica automática.</p>
                 </div>
             </div>
         </div>

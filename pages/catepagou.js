@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import dbConnect from '../lib/cat-dbConnect'
 import Cat from '../models/cadastrar-categorias'
-import BarraTopo from '../components/Ecomprei/topo/barratopo'
+import BarraTopo from '../components/Epagou/topo/barratopo'
 import { useLayoutEffect } from 'react'
 
 const Index = ({ cats }) => (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import estilo from './logoSearch.module.css'
-import LogoEcomprei from '../../../../public/logoEcomprei.png'
+import LogoEpagou from '../../../../public/logo-epagou.png'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
@@ -13,7 +13,7 @@ function logoSearch() {
         <div className={estilo.root}>
             <div className={estilo.areaGeral}>
               <div>
-                <Image src={LogoEcomprei} alt="Logotipo ALT" />
+                <Image src={LogoEpagou} alt="Logotipo ALT" />
               </div>
               <div className={estilo.areaBusca}>
                 <SearchIcon className={estilo.iconSearch} />

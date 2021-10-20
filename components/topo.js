@@ -17,7 +17,7 @@ function Topo() {
                         <li className={styles.areaMenu.li}><a href="/paginacategoria">Categorias MongoDb</a></li>
                         <li className={styles.areaMenu.li}><a href="/sobre">Sobre nós</a></li>
                         <li className={styles.areaMenu.li}><a href="/tempo">tempo</a></li>
-                        <li className={styles.areaMenu.li}><a href="/ecomprei">Ecomprei</a></li>
+                        <li className={styles.areaMenu.li}><a href="/epagou">Epagou</a></li>
                     </ul>
                 </div>
             </div>
