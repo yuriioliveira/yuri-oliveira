@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import dbConnect from '../../../lib/cat-dbConnect'
-import Pet from '../../../models/Pet'
 import Cat from '../../../models/cadastrar-categorias'
 
 /* Allows you to view pet card info and delete pet card*/
@@ -10,7 +9,7 @@ const CatPage = ({ cat }) => {
   const router = useRouter()
   const [message, setMessage] = useState('')
   const handleDelete = async () => {
-    const catID = router.query.id
+    const catID = router.query.url_categorias
 
     try {
       await fetch(`/api/categorias/${catID}`, {
