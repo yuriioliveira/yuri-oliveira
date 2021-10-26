@@ -9,7 +9,7 @@ const CatPage = ({ cat }) => {
   const router = useRouter()
   const [message, setMessage] = useState('')
   const handleDelete = async () => {
-    const catID = router.query.url_categorias
+    const catID = router.query.id
 
     try {
       await fetch(`/api/categorias/${catID}`, {
