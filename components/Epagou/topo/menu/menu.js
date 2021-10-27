@@ -1,3 +1,48 @@
+import React from "react";
+import useSWR from "swr";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+export default function App() {
+    const { data, error } = useSWR(
+      "http://localhost:3000/api/categoriasfixa",
+      fetcher
+    );
+  
+    if (error) return "An error has occurred.";
+    if (!data) return "Loading...";
+    
+    const categorias = data.categorias;
+
+    console.log(data.categorias)
+    
+    return (
+      <div>
+        <ul>
+            {categorias.map((categoria) => (
+                <li key={categoria.id}>
+                    <p>{ categoria.Nome}</p>
+                </li>
+            ))}
+        </ul>
+      </div>
+    );
+  }
+  
+
+
+
+// function MenuTopo() {
+    
+//     return (
+//         <h3>area de categorias</h3>
+//     )
+// }
+
+
+// export default MenuTopo
+
+
 // import { useEffect, useState } from "react";
 
 // function MenuTopo() {
@@ -8,7 +53,7 @@
 //         handleGetCatData();
 //     }, []);
 
-//     async function handleGetCatData() {
+//     export async function handleGetCatData() {
 //         const res = await fetch('http://localhost:3000/api/categoriasfixa');
 //         const data = await res.json();
 //         console.log(data.categorias);
@@ -30,13 +75,3 @@
 // }
 
 // export default MenuTopo
-
-function MenuTopo() {
-    
-    return (
-        <h3>area de categorias</h3>
-    )
-}
-
-
-export default MenuTopo
