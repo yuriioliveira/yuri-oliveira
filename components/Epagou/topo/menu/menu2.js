@@ -5,7 +5,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function MenuTopo2() {
     const { data, error } = useSWR(
-      "http://localhost:3000/api/categorias",
+      "https://www.yurioliveira.tec.br/api/categorias",
       fetcher
     );
   
