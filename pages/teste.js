@@ -1,7 +1,10 @@
+import MenuTopo2 from '../components/Epagou/topo/menu/menu2'
+
 function testeApi({ estrelas }) {
   return (
     <div>
       <p>Next.js has {estrelas} ⭐️</p>
+      <MenuTopo2/>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import useSWR from "swr";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function App() {
+export default function MenuTopo() {
     const { data, error } = useSWR(
       "http://localhost:3000/api/categoriasfixa",
       fetcher
@@ -19,9 +19,9 @@ export default function App() {
     return (
       <div>
         <ul>
-            {categorias.map((categoria) => (
-                <li key={categoria.id}>
-                    <p>{ categoria.Nome}</p>
+            {categorias.map((cat) => (
+                <li key={cat.id}>
+                    <p>{ cat.Nome}</p>
                 </li>
             ))}
         </ul>
