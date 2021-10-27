@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import dbConnect from '../../../lib/cat-dbConnect'
 import Cat from '../../../models/cadastrar-categorias'
+import Barratopo from '../../../components/Epagou/topo/barratopo'
 
 /* Allows you to view pet card info and delete pet card*/
 const CatPage = ({ cat }) => {
@@ -22,28 +23,31 @@ const CatPage = ({ cat }) => {
   }
 
   return (
-    <div key={cat._id}>
-      <div className="card">
-      <h5 className="cat-name">{cat.nome_categoria}</h5>
-          <div className="main-content">
-            <p className="cat-name">{cat.nome_categoria}</p>
-            <p className="owner">Ativo: {cat.ativo_categorias}</p>
-            <p className="owner">subcategorias: {cat.subs_categorias}</p>
-            <p className="owner">URL: {cat.url_categorias}</p>
-            <p className="owner">Categoria pai: {cat.pai_categorias}</p>
-            <p className="owner">Id: {cat.id_categorias}</p>
+    <div>
+      <Barratopo />
+      <div key={cat._id}>
+        <div className="card">
+        <h5 className="cat-name">{cat.nome_categoria}</h5>
+            <div className="main-content">
+              <p className="cat-name">{cat.nome_categoria}</p>
+              <p className="owner">Ativo: {cat.ativo_categorias}</p>
+              <p className="owner">subcategorias: {cat.subs_categorias}</p>
+              <p className="owner">URL: {cat.url_categorias}</p>
+              <p className="owner">Categoria pai: {cat.pai_categorias}</p>
+              <p className="owner">Id: {cat.id_categorias}</p>
 
-          <div className="btn-container">
-            <Link href="/categorias/[id]/edit" as={`/categorias/${cat._id}/edit`}>
-              <button className="btn edit">Edit</button>
-            </Link>
-            <button className="btn delete" onClick={handleDelete}>
-              Delete
-            </button>
+            <div className="btn-container">
+              <Link href="/categorias/[id]/edit" as={`/categorias/${cat._id}/edit`}>
+                <button className="btn edit">Edit</button>
+              </Link>
+              <button className="btn delete" onClick={handleDelete}>
+                Delete
+              </button>
+            </div>
           </div>
         </div>
+        {message && <p>{message}</p>}
       </div>
-      {message && <p>{message}</p>}
     </div>
   )
 }
