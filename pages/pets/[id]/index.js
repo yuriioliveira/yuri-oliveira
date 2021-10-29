@@ -8,17 +8,18 @@ import Pet from '../../../models/Pet'
 const PetPage = ({ pet }) => {
   const router = useRouter()
   const [message, setMessage] = useState('')
+  
   const handleDelete = async () => {
     const petID = router.query.id
 
-    try {
-      await fetch(`/api/pets/${petID}`, {
-        method: 'Delete',
-      })
-      router.push('/')
-    } catch (error) {
-      setMessage('Failed to delete the pet.')
-    }
+    // try {
+    //   await fetch(`/api/pets/${petID}`, {
+    //     method: 'Delete',
+    //   })
+    //   router.push('/')
+    // } catch (error) {
+    //   setMessage('Failed to delete the pet.')
+    // }
   }
 
   return (
