@@ -5,7 +5,7 @@ export default function List() {
     const [owners, setOwners] = useState([]);
     useEffect(() => {
         async function loadData() {
-            const res = await fetch('http://localhost:3000/api/vehicles');
+            const res = await fetch('https://www.yurioliveira.tec.br/api/vehicles');
             const ownersList = await res.json();
             setOwners(ownersList);
         }
